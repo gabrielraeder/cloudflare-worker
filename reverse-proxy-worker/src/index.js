@@ -7,7 +7,7 @@ async function handleRequest(request) {
 	// Check if the request is for the "/docs" subpath
 	if (url.pathname.startsWith('/docs')) {
 		// Replace with your actual Netlify docs hostname
-		url.hostname = 'docs.writedocs.io';
+		url.hostname = 'https://botsi.docs.writedocs.io/';
 
 		// Remove the /docs prefix so that the docs site receives the correct path
 		url.pathname = url.pathname.replace(/^\/docs/, '') || '/';
